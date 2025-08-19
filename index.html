@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Global Navigation -->
+<div class="nav">
+    <div class="first-nav">
+       <img src="bars.svg" alt="" id ="ham">
+        <div class="left-nav">
+            Amulya'Portfolio
+         </div>
+        <div class="right-nav">
+            <ul class="nav-list-frist">
+                <a href="#" onclick="showSection('home')"><li class="list-items">Home</li></a>
+                <a href="#" onclick="showSection('about')"><li class="list-items">About</li></a>
+                <a href="#" onclick="showSection('skills')"><li class="list-items">Skills</li></a>
+                <a href="#" onclick="showSection('projects')"><li class="list-items">Projects</li></a>
+                <a href="#" onclick="showSection('contact')"><li class="list-items">Contact Me</li></a>
+            </ul>
+       </div>
+</div>
+<div class="second-nav">
+    <ul class="nav-list-second">
+        <a href="#" onclick="showSection('home')"><li class="list-items">Home</li></a>
+        <a href="#" onclick="showSection('about')"><li class="list-items">About</li></a>
+        <a href="#" onclick="showSection('skills')"><li class="list-items">Skills</li></a>
+        <a href="#" onclick="showSection('contact')"><li class="list-items">Contact Me</li></a>
+    </ul>
+</div>
+</div>
+
+<!-- Home Section -->
+<section id="home" class="section ">
+    <main>
+        <div class="left-main">
+            <div class="details">
+                <div class="line1 line">I'm <span id="name">Amulya L D</span></div>
+                <div class="line2 line"><span id="profession"></span></div>
+                <div class="line3 line">For More Click Below</div>
+                <button class="btn1 line"> Download CV</button>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="image">
+                <img src="profile.jpg" alt="logo" id="logo">
+            </div>
+        </div>
+    </main>
+</section>
+<div class="separte"></div>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="nav-about">
+        <div class="heading">
+         About ME
+        </div>
+    </div>
+    <div class="about-details">
+        <div class="box"><span class="key">Name :</span><span class="value">Amulya L D</span></div>
+        <div class="box"><span class="key">Age :</span><span class="value">21 Years</span></div>
+        <div class="box"><span class="key">Profession :</span><span class="value">Web Developer</span></div>
+        <div class="box"><span class="key">Graduation :</span><span class="value">MCA</span></div>
+        <div class="box"><span class="key">Language Known:</span><span class="value">Kannada, Hindi,Tamil,English</span></div>
+    </div>
+</section>
+<div class="separte"></div>
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="up-skill">
+        <div class="heading-skill">
+            Skills
+        </div>
+        <div class="c-progress">
+            <div class="html-prog prog">
+                <div class="inner-html-prog inner-prog">
+                    <span class="html-value">0%</span>
+                    <span class="text">HTML</span>
+                </div>
+            </div>
+            <div class="css-prog prog">
+                <div class="inner-css-prog inner-prog">
+                    <span class="css-value">0%</span>
+                    <span class="text">CSS</span>
+                </div>
+            </div>
+            <div class="js-prog prog">
+                <div class="inner-js-prog inner-prog">
+                    <span class="js-value">0%</span>
+                    <span class="text">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down-skill">
+        <div class="react-prog linear-prog">
+            <div class="inner-react-prog inner-linear"></div>
+        </div>
+        <div class="skill-content">
+            <span class="text">React-Js</span>
+            <span class="react-value">0%</span>
+        </div>
+        <div class="python-prog linear-prog">
+            <div class="inner-python-prog inner-linear"></div>
+        </div>
+        <div class="skill-content">
+            <span class="text">Python</span>
+            <span class="python-value">0%</span>
+        </div>
+        <div class="java-prog linear-prog">
+            <div class="inner-java-prog inner-linear"></div>
+        </div>
+        <div class="skill-content">
+            <span class="text">Java</span>
+            <span class="java-value">0%</span>
+        </div>
+        <div class="php-prog linear-prog">
+            <div class="inner-php-prog inner-linear"></div>
+        </div>
+        <div class="skill-content">
+            <span class="text">PHP</span>
+            <span class="php-value">0%</span>
+        </div>
+    </div>
+</section>  
+<div class="separte"></div>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="nav-projects">
+        <div class="heading-projects">
+            <span>Projects</span>
+        </div>
+    </div>
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="chat.png" alt="Project 1">
+            </div>
+            <div class="project-details">
+                <h3>Real Time Chat Application</h3>
+                <p>A real-time chat application is a software system that allows two or more users to exchange messages instantly, without refreshing the page or waiting for manual updates.</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="http://localhost:5173" class="project-btn">Live Demo</a>
+                    <a href="https://github.com/" class="project-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-image">
+                <img src="Blog-Management-System.png" alt="Project 2">
+            </div>
+            <div class="project-details">
+                <h3>Blog Management System</h3>
+                <p>A Blog Management System is a web application that allows users (usually admins or authors) to create, edit, publish, and manage blog posts. It acts like a lightweight Content Management System (CMS) but focused only on blogs.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+                <div class="project-links">
+                    <a href="http://localhost/blog-system/pages/login.php" class="project-btn">Live Demo</a>
+                    <a href="https://github.com/" class="project-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-image">
+                <img src="Virtual Assistant.jpg" alt="Project 3">
+            </div>
+            <div class="project-details">
+                <h3>Virtual Assistant</h3>
+                <p>A Virtual Assistant (VA) is a software program (often powered by Artificial Intelligence) that can understand user commands (text or voice) and perform tasks automatically.
+
+                Think of Siri, Alexa, Google Assistant, or ChatGPT – they’re all virtual assistants.</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="D:/projects/virtual-assistant/index.html" class="project-btn">Live Demo</a>
+                    <a href="https://github.com/" class="project-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="separte"></div>
+<section id="contact" class="section">
+    <div class="left-contact">
+         <div class="icon"><span ><i class="fa-brands fa-instagram"></i></span></div>
+         <div class="icon"><span ><i class="fa-brands fa-square-facebook"></i></span></div>
+         <div class="icon"><span ><i class="fa-brands fa-github"></i></span></div>
+         <div class="icon"><span ><i class="fa-brands fa-linkedin"></i></span></div>
+    </div>
+    <div class="right-contact">
+        <div class="heading-contact">Contact ME</div>
+        <div class="form">
+            <input type="text" placeholder="Enter the name">
+            <input type="email" placeholder="abc12@gmail.com">
+            <textarea rows="5" id="message" placeholder="Ask anything"></textarea>
+            <button class="btn">submit</button>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+</body>
+</html>
