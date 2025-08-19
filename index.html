@@ -202,18 +202,18 @@
 <div class="separte"></div>
 <section id="contact" class="section">
     <div class="left-contact">
-         <div class="icon"><span ><i class="fa-brands fa-instagram"></i></span></div>
-         <div class="icon"><span ><i class="fa-brands fa-square-facebook"></i></span></div>
-         <div class="icon"><span ><i class="fa-brands fa-github"></i></span></div>
-         <div class="icon"><span ><i class="fa-brands fa-linkedin"></i></span></div>
+         <a href="https://www.instagram.com/amulya_ld/" target="_blank" class="icon"><span><i class="fa-brands fa-instagram"></i></span></a>
+         <a href="https://www.facebook.com/amulya.ld" target="_blank" class="icon"><span><i class="fa-brands fa-square-facebook"></i></span></a>
+         <a href="https://github.com/Amulya-LD" target="_blank" class="icon"><span><i class="fa-brands fa-github"></i></span></a>
+         <a href="https://www.linkedin.com/in/amulya-ld/" target="_blank" class="icon"><span><i class="fa-brands fa-linkedin"></i></span></a>
     </div>
     <div class="right-contact">
         <div class="heading-contact">Contact ME</div>
         <div class="form">
-            <input type="text" placeholder="Enter the name">
-            <input type="email" placeholder="abc12@gmail.com">
-            <textarea rows="5" id="message" placeholder="Ask anything"></textarea>
-            <button class="btn">submit</button>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="your.email@example.com" required>
+            <textarea rows="5" id="message" placeholder="Ask anything" required></textarea>
+            <button type="button" class="btn" onclick="sendMessage()">Send Message</button>
         </div>
     </div>
 </section>

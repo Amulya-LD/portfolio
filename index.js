@@ -294,3 +294,37 @@ t6.from(".project-card",{
         scrub: 2,
     }
 })
+
+// Contact form functionality
+function sendMessage() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    // Simple email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    // Create mailto link for sending email
+    const subject = `Portfolio Contact from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`;
+    const mailtoLink = `mailto:amulya.ld@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Clear form after sending
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+    
+    alert('Opening your email client to send the message!');
+}
